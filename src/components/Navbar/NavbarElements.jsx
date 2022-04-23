@@ -2,8 +2,9 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 //import { Link as LinkS } from "react-scroll";
 
+
 export const Nav = styled.nav`
-  background: #000;
+  background: #f2f2f2;
   height: 80px;
   // margin-top: -80px;
   display: flex;
@@ -29,7 +30,7 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 export const NavLogo = styled(LinkR)`
-  color: #fff;
+  color: #545454;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -39,6 +40,11 @@ export const NavLogo = styled(LinkR)`
   font-weight: bold;
   text-decoration: none;
 `;
+
+export const LogoImg = styled.img`
+  width: 3rem;
+  padding-right: 10px;
+`
 
 export const MobileIcon = styled.div`
   display: none;
@@ -51,7 +57,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff
+    color: #545454
   }
 `;
 
@@ -71,10 +77,11 @@ export const NavItem = styled.li`
   height: 80px;
 `;
 export const NavLinks = styled(LinkR)`
-  color: #fff;
+  color: #545454;
   display: flex;
   align-items: center;
   text-transform: none;
+  text-decoration: none;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;

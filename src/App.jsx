@@ -13,7 +13,6 @@ function App() {
   return (
     <Router>
       <Home/>
-      {/* <JobTable table={TABLE.DATA} /> */}
     </Router>
   );
 }

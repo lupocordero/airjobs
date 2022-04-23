@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
+import mainlogo from "../../Images/jobs-logo.png";
 import {
   Nav,
   NavbarContainer,
@@ -8,15 +9,19 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  LogoImg,
 } from "./NavbarElements";
 
-const Navbar = () => {
+const Navbar = ( {toggle} ) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">IronJobs</NavLogo>
-          <MobileIcon>
+          <NavLogo to="/">
+            <LogoImg src={mainlogo} alt="main logo">
+              </LogoImg>Ironjobs.
+          </NavLogo>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
